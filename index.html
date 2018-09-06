@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>0xzhang</title>
+  <meta name="google-site-verification" content="xrQAqXX1um__Efk5OX-sKYOF5_Dop6dHEwmeuVzcMOY" />
+  <meta name="baidu-site-verification" content="I1gE5LUy5V" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <script src="js/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({scrollTop: $(hash).offset().top}, 500, function(){window.location.hash = hash;});
+      }
+    });
+  });
+  </script>
+</head>
+
+<body>
+  <div class="banner">
+    <div id="header">
+      <div id="name"><a href="#">0xzhang</div>
+      <div id="sidenav">
+        <div class="nav_seg"><a href="#about">about</a></div>
+        <div class="nav_seg"><a href="#experience">experience</a></div>
+        <div class="nav_seg"><a href="#projects">projects</a></div>
+        <div class="nav_seg"><a href="#research">research</a></div>
+        <div class="nav_seg"><a href="#blog">blog</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main">
+
+    <div class="content">
+      <a class="anchor" id="about"></a>
+      <div class="introduction">
+        <div id="photo">
+          <img src="images/v.jpg" />
+        </div>
+        <div class="right">
+          <p>
+            My interests include software reverse engenering and analysis, operating system security and Web vulnerabilities. 
+          </p>
+          <p>
+            I have to say my programming and language skills still weak. So I think I should practice harder and harder blahbla...
+          </p>
+      </div>
+    </div>
+        <div class="subtitle">
+          News
+        </div>
+        <ul id="news">
+          <li>(2018.09) This page is online.
+        </ul>
+        </div>
+        
+    <hr>
+    
+    <div class="content">
+      <div class="title">Experience</div>
+      <a class="anchor" id="experience"></a>
+
+      <div class="subtitle">Honors and Awards</div>
+      <ul>
+        Noting worth talk.
+      </ul>
+
+      <div class="subtitle">Internship</div>
+      <ul>
+        Soon.
+      </ul>
+    </div>
+
+    <hr>
+    
+    <div class="content">
+      <div class="title">Projects</div>
+      <a class="anchor" id="projects"></a>
+      <ul>
+        Some work will show on <a href="https://github.com/0xzhang">my github</a> soon.
+      </ul>
+    </div>
+
+    <hr>
+
+    <div class="content">
+      <div class="title">Research</div>
+      <a class="anchor" id="research"></a>
+      <ul>Nothing yet.
+      </ul>
+    </div>
+
+   <hr>
+
+    <div class="content">
+      <div class="title">Blog</div>
+      <a class="anchor" id="blog"></a>
+      <ul>
+        <p>Not exist yet.</p>
+        <p>Some notes about maths, algorithms and computer science will be recorded <a href="https://0xzhang.github.io/blog">here</a> later.</p>
+      </ul>
+    </div>
+  </div>
+
+  <div class="flag" style="margin-top: 10px; text-align: center;">
+    <img src="https://s11.flagcounter.com/count2/bo6y/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_9/viewers_0/labels_1/pageviews_1/flags_0/percent_1/" alt="Flag Counter" border="0"/>
+  </div>
+  <div style="margin-top: 10px; text-align: center; font-size: 14px;">
+  Just for learn @ 0xzhang 2018 - 2018                                          
+  </div>
+
+</body>
+</html>
