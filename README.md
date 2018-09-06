@@ -2,4 +2,4 @@
 ------
 
 
-This website inspired from [lingxuez](https://github.com/lingxuez).
+This website inspired from [lingxuez.github.io](https://github.com/lingxuez/lingxuez.github.io).
