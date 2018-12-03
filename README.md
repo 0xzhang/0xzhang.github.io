@@ -2,5 +2,5 @@
 ------
 
 
-This website inspired from [lingxuez.github.io](https://github.com/lingxuez/lingxuez.github.io).
-The blog website inspired from [yurichev.com](https://yurichev.com/).
+The homepage website has been inspired by [lingxuez.github.io](https://github.com/lingxuez/lingxuez.github.io) and 
+the blog website has been inspired by [yurichev.com](https://yurichev.com/).
