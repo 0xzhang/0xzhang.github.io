@@ -2,5 +2,5 @@
 ------
 
 
-The homepage website has been inspired by [lingxuez.github.io](https://github.com/lingxuez/lingxuez.github.io) and 
+The homepage website has been inspired by [lingxuez.github.io](https://lingxuez.github.io/) and 
 the blog website has been inspired by [yurichev.com](https://yurichev.com/).
