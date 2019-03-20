@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>UVa272Tex_Quotes</title>
+<link rel="shortcut icon" href="../images/favicon.ico" />
+<link rel="stylesheet" href="../css/blog_style.css">
+<meta name="author" content="0xzhang">
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node first-line-indent'><h1><a name='header-n0' class='md-header-anchor '></a>UVa272 Tex Quotes</h1><div class='md-toc' mdtype='toc'><p class="md-toc-content"><span class="md-toc-item md-toc-h1" data-ref="n0"><a class="md-toc-inner" href="#header-n0">UVa272 Tex Quotes</a></span></p></div><hr /><p>本题解决的问题是读取整段的文本，判断其中的双引号是左双引号还是右双引号。此题目不能够使用 <code>scanf(&quot;%s&quot;)</code> ，因为可能会忽略有意义的空格、缩进或换行。</p><p>第一种方法是使用 <code>fgetc(fin)</code> ，返回值为<code>int</code>类型，因为当文件结束时会返回一个特殊标记EOF，它并不是一个<code>char</code>。如果从标准输入输出读取一个字符，可以用 <code>getchar()</code> ，等价于 <code>fgetc(stdin)</code> 。</p><p>不同操作系统的回车换行符不同，Windows是&quot;\r\n&quot;，Linux是&quot;\n&quot;，MacOS是&quot;\r&quot;。</p><p>第二种方法是使用 <code>fgets(buf, maxn, fin)</code> 读取完整的一行，其中<code>buf</code>的声明为char类型的 <code>buf[maxn]</code> ，这个函数能够读取不超过<code>maxn-1</code>个字符，然后在末尾填上结束符&quot;\0&quot;，这个函数读取一行是因为当读取到回车符&quot;\n&quot;时，读取就会停止，只有当文件结束且最后一个字符不是换行符，读取到文件结束符就会停止，buf将不会以&quot;\n&quot;结尾。</p><p>应当保证<code>buf</code>足够存放下文件的一行内容，当一个字符都没有读到时，<code>fgets</code> 返回 <code>NULL</code>。</p><p>C语言不禁止程序读写“非法内存”，<code>gets(s)</code> 存在问题，由于没有指明读取的最大字符数，s会出现溢出问题，C11已正式删除。</p><p>&nbsp;</p><p>→<a href='https://0xzhang.github.io/blog/index.html'>back</a></p><hr /><p><strong>Contact me</strong></p><p>Please contact me about any suggestion(s): <em><a href='mailto:aliceb0b@hotmail.com' target='_blank' class='url'>aliceb0b@hotmail.com</a></em>.</p></div>
+</body>
+</html>
